@@ -2,7 +2,9 @@
   "name": "senama-todo-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://quuuod.github.io/TodoTestApp/",
   "dependencies": {
+    "@ant-design/icons": "^5.4.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -10,17 +12,29 @@
     "@types/node": "^16.18.108",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
+    "antd": "^5.20.5",
+    "axios": "^1.7.7",
+    "classnames": "^2.5.1",
+    "cors": "^2.8.5",
+    "mongoose": "^8.6.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-query": "^3.39.3",
+    "react-router-dom": "^6.26.1",
     "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint \"**/*.{ts,tsx}\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start:server": "node dist/server.js",
+    "start:all": "concurrently \"npm run start:server\" \"npm run start\"",
+    "format": "prettier --write ."
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +53,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/mongoose": "^5.11.97",
+    "concurrently": "^8.2.2",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "typescript": "^5.5.4"
   }
 }

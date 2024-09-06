@@ -1,0 +1,85 @@
+.layout {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #e6f7ff, #ffffff);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background: #001529;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.menu {
+  line-height: 64px;
+  display: flex;
+}
+
+.menu .ant-menu-item {
+  padding: 0 24px;
+  font-size: 16px;
+}
+
+.menu .ant-menu-item-icon {
+  margin-right: 8px;
+}
+
+.content {
+  padding: 24px;
+  background: #fff;
+  max-width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+.site-layout-content {
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  padding: 16px;
+  background: #001529;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    justify-content: center;
+  }
+
+  .menu .ant-menu-item {
+    padding: 0 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-layout-content {
+    max-width: 100%;
+    margin: 0;
+    font-size: 24px;
+  }
+  .menu {
+    justify-content: center;
+  }
+
+  .menu .ant-menu-item {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 12px;
+  }
+}
