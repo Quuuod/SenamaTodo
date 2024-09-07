@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/SenamaTodo/static/css/main.784ef284.css",
-    "main.js": "/SenamaTodo/static/js/main.813b2d5a.js",
+    "main.js": "/SenamaTodo/static/js/main.4d0b0bcd.js",
     "index.html": "/SenamaTodo/index.html",
     "main.784ef284.css.map": "/SenamaTodo/static/css/main.784ef284.css.map",
-    "main.813b2d5a.js.map": "/SenamaTodo/static/js/main.813b2d5a.js.map"
+    "main.4d0b0bcd.js.map": "/SenamaTodo/static/js/main.4d0b0bcd.js.map"
   },
   "entrypoints": [
     "static/css/main.784ef284.css",
-    "static/js/main.813b2d5a.js"
+    "static/js/main.4d0b0bcd.js"
   ]
 }
