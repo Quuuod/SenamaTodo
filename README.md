@@ -10,11 +10,11 @@ npm install
 npx tsc
 
 Запустить бэкенд:
-
 npm run start:server и перейти на https://quuuod.github.io/SenamaTodo/
 
-Запустить фронтенд и бэкенд одновременно:
+Запустить фронтенд и бэкенд локально:
 npm run start:all
+
 Доступные команды
 npm start - Запускает фронтенд React.
 npm run start:server - Запускает бэкенд на основе скомпилированных файлов TypeScript.
