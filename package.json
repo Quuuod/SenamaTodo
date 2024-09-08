@@ -2,7 +2,7 @@
   "name": "senama-todo-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://quuuod.github.io/TodoTestApp/",
+  "homepage": "https://quuuod.github.io/SenamaTodo/",
   "dependencies": {
     "@ant-design/icons": "^5.4.0",
     "@testing-library/jest-dom": "^5.17.0",
@@ -55,11 +55,13 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/cors": "^2.8.17",
     "@types/mongoose": "^5.11.97",
     "concurrently": "^8.2.2",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "typescript": "^5.5.4"
+    "prettier": "^3.3.3",
+    "typescript": "^5.1.6"
   }
 }

@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <BrowserRouter basename="/TodoTestApp">
+  <BrowserRouter basename="/SenamaTodo">
     <QueryClientProvider client={queryClient}>
       <App />
       <ReactQueryDevtools />

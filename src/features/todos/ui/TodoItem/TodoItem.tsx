@@ -43,7 +43,13 @@ export const TodoItem = ({
           <Button
             key="toggle"
             type="primary"
-            icon={completed ? <UndoOutlined /> : <CheckOutlined />}
+            icon={
+              completed ? (
+                <UndoOutlined style={{ fontSize: '16px' }} />
+              ) : (
+                <CheckOutlined style={{ fontSize: '16px' }} />
+              )
+            }
             onClick={(e) => {
               e.stopPropagation();
               onToggle(id);
@@ -54,7 +60,7 @@ export const TodoItem = ({
           <Button
             key="delete"
             danger
-            icon={<DeleteOutlined />}
+            icon={<DeleteOutlined style={{ fontSize: '16px' }} />}
             onClick={(e) => {
               e.stopPropagation();
               onDelete(id);
@@ -84,6 +90,7 @@ export const TodoItem = ({
           value={newText}
           onChange={(e) => setNewText(e.target.value)}
           autoFocus
+          required={true}
         />
       </Modal>
     </>

@@ -1,38 +1,22 @@
-import { Layout, Typography, Menu, Space, Tooltip } from 'antd';
+import { Layout, Typography, Space, Tooltip } from 'antd';
 import {
-  AppstoreOutlined,
-  UserOutlined,
   GithubOutlined,
   LinkedinOutlined,
   MailOutlined,
   LinkOutlined
 } from '@ant-design/icons';
-import { Link } from 'react-router-dom';
+
+import { AppHeader, AppFooter } from '../../features';
 
 import './AboutPage.css';
 
-const { Header, Content, Footer } = Layout;
+const { Content } = Layout;
 const { Title, Paragraph } = Typography;
 
 export const AboutPage = () => {
   return (
     <Layout className="layout">
-      <Header className="header">
-        <div className="logo">Todo App</div>
-        <Menu
-          theme="dark"
-          mode="horizontal"
-          defaultSelectedKeys={['2']}
-          className="menu"
-        >
-          <Menu.Item key="1" icon={<AppstoreOutlined />}>
-            <Link to="/">Home</Link>
-          </Menu.Item>
-          <Menu.Item key="2" icon={<UserOutlined />}>
-            <Link to="/about">About</Link>
-          </Menu.Item>
-        </Menu>
-      </Header>
+      <AppHeader />
       <Layout>
         <Content className="content">
           <div className="site-layout-content">
@@ -106,10 +90,8 @@ export const AboutPage = () => {
             </Space>
           </div>
         </Content>
-        <Footer className="footer">Created by Markov Roman</Footer>
+        <AppFooter />
       </Layout>
     </Layout>
   );
 };
-
-export default AboutPage;
